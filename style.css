@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -17,7 +21,7 @@ header .wrap {
 }
 
 header a img {
-  width: 100px;
+  width: 100%;
 }
 
 header ul {
@@ -30,9 +34,17 @@ header ul li {
 header ul li a {
   text-decoration: none;
   color: white;
-  font-size: 7px;
+  font-size: 0.5 rem;
   padding: 0 6px;
   text-transform: uppercase;
+}
+
+header ul li a:hover {
+  color: #695228;
+}
+
+header ul li a:active {
+  color: #695228;
 }
 
 /* ============= Banner ============= */
@@ -51,18 +63,64 @@ header ul li a {
 .banner-content {
   padding: 0 10%;
 }
+
+.banner-content h3 {
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+  margin-top: 50px;
+}
+.banner-content p {
+  color: white;
+  font-size: 1rem;
+  font-family: "Open Sans", sans-serif;
+  font-style: italic;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.banner-content hr {
+  width: 600px;
+  border: 1px solid white;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
 .title {
   color: white;
   font-family: "Open Sans", sans-serif;
   text-transform: uppercase;
-  font-size: 20px;
+  font-size: 3.5rem;
+  letter-spacing: 1.5px;
+  font-weight: 450;
   text-align: center;
+}
+
+.btn-booking {
+  background: #695228;
+  position: absolute;
+  left: 45%;
+  color: white;
+  padding: 10px 10px;
+  border: none;
+  border-style: solid;
+  margin-top: 60px;
+}
+
+.btn-booking a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1.5px;
 }
 
 /* ============= Our Room ============= */
 .our-room {
   padding: 10%;
   background: #f5f4f0;
+  transition: 0.3s;
 }
 
 .title-section {
